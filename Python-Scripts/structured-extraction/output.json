@@ -1,0 +1,10 @@
+{
+    "description": "to outline the terms for consulting services for a period of 6 months.", 
+    "paymentAmount": "$5,000", 
+    "paymentMethod": "Bank Transfer", 
+    "paymentDate": "15th April 2025", 
+    "parties": [
+        "John Doe", 
+        "Acme Corporation"
+    ]
+}

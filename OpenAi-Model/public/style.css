@@ -1,0 +1,131 @@
+/* Resetting some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 200%;
+  height: 80%; /* Full screen height */
+  max-width: 600px; /* Max width for the chat */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #009688; /* Fresh teal color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 15px 15px 0 0;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; /* Messages appear from top to bottom */
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border-radius: 15px;
+  max-width: 75%;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.user-message {
+  background-color: #00bfae; /* Fresh greenish-blue for the user */
+  color: white;
+  align-self: flex-end;
+  border-radius: 20px 20px 0 20px;
+}
+
+.bot-message {
+  background-color: #e1f5fe; /* Soft blue for the bot */
+  color: #333;
+  align-self: flex-start;
+  border-radius: 20px 20px 20px 0;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.user-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+.user-input:focus {
+  border-color: #00bfae; /* Greenish-blue on focus */
+}
+
+.send-btn {
+  background-color: #00bfae;
+  color: white;
+  padding: 12px 20px; /* Slightly more padding for the text */
+  border-radius: 25px; /* Rounded corners for the button */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Allow the width to auto-adjust for the text */
+  height: 45px;
+  font-size: 1.1rem; /* Font size for the "Send" text */
+  text-transform: uppercase; /* Make text uppercase */
+}
+
+.send-btn:hover {
+  background-color: #008f85;
+}
+
+.send-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .chat-container {
+    width: 100%;
+    height: 100%; /* Full screen on smaller devices */
+    padding: 0 10px; /* Slight padding for smaller screens */
+  }
+}
