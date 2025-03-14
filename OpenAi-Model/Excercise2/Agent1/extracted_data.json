@@ -3,8 +3,8 @@
     "John Doe",
     "Acme Corporation"
   ],
-  "paymentAmount": "Five Thousand Dollars ($5,000.00)",
+  "paymentAmount": "$5,000.00",
   "paymentMethod": "Bank Transfer",
   "paymentDate": "April 15, 2025",
-  "description": "Consultant to provide professional consulting services to the Company."
+  "description": "Consultant shall provide professional consulting services. Payment to be made for the services rendered."
 }
